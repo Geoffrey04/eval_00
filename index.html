@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Calculation of Budget</title>
+    <link rel="stylesheet" href="style.css">
+
+
+</head>
+<body>
+<h1>Calcul de Bugdet personnalisable</h1>
+
+<!--- Partie du tableau pour les dépenses : ---->
+
+<div class="container" id="depenses">
+
+    <button type="button" id="reset">Tout Effacer</button>
+
+    <div class="row" id="row_depenses">
+
+        <span>Dépenses</span>
+
+        <button type="button" id="send_depense">Send</button>
+
+    </div>
+
+    <br>    <span class="titre_depenses">Loyers/Charges</span>
+
+                     <input type="text" class="input_depenses" title="depenses"/>
+
+    <br> <br>   <span class="titre_depenses">Eau/Gaz/élec. </span>
+
+                     <input type="text" class="input_depenses" title="depenses"/>
+
+    <br> <br>   <span class="titre_depenses">Tél./Internet</span>
+
+                     <input type="text" class="input_depenses" title="depenses"/>
+
+                <div id="new_depense"></div>
+
+   <br> <br>     <input type="text" placeholder="Nom de la dépense" id="new_input_dn"/>
+
+                    <input type="text" placeholder="Valeur de la dépense" id="new_input_dv" title="depenses"/>
+
+    <button type="button" id="add_new_input">Add</button>
+
+
+<!---- Partie du tableau pour les recettes : --->
+
+</div>
+
+
+<div class="container" id="recette">
+
+    <div class="row" id="row_recette">
+
+        <span>Recette</span>
+
+        <button type="button" id="send_recette">Send</button>
+
+
+    </div>
+
+    <br>    <span class="titre_depenses">Salaire</span>
+
+                 <input type="text" class="input_recette" title="recette"/>
+
+    <br> <br> <span class="titre_depenses">Aides(Allocations,etc...)</span>
+
+                  <input type="text" class="input_recette" title="recette"/>
+
+    <br> <br> <span class="titre_depenses">Rentes</span>
+
+                    <input type="text" class="input_recette" title="recette"/>
+
+
+
+
+    <br> <br> <input type="text" placeholder="Nom de la recette" class="new_input"/>
+
+    <input type="text" placeholder="Valeur de la recette" class="new_input" title="recette"/>
+
+    <button type="button" class="add_new_input">Add</button>
+
+
+
+
+</div>
+
+<!---- Partie du tableau pour l'épargne : ---->
+
+<div class="container" id="épargne">
+
+    <div class="row" id="row_epargne">
+
+        <span>épargne</span>
+
+        <button type="button" id="send_epargne">Send</button>
+
+
+    </div>
+
+
+    <br> <br> <input type="text" placeholder="Nom de l'épargne" class="new_input"/>
+
+    <input type="text" placeholder="Valeur de l'épargne" class="new_input"/>
+
+    <button type="button" class="add_new_input">Add</button>
+
+
+</div>
+
+
+<!---- Partie résultat du tableau : ---->
+
+
+<div class="container" id="resultat">
+
+    <div class="row" id="row_resultat">
+
+        <span>Résultat</span>
+
+    </div>
+
+    <div id="show_result">resultat,,,,resultat,,,,resultat,,,,resultat,,,,resultat,,,,
+        resultat,,,,resultat,,,,resultat,,,,resultat,,,,resultat,,,,resultat,,,,
+        <br><br><br><br>
+    </div>
+
+
+</div>
+
+
+
+<script src="appli.js"></script>
+</body>
+</html>
