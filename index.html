@@ -20,32 +20,42 @@
 
         <span>Dépenses</span>
 
-        <button type="button" id="send_depense">Send</button>
+        <button type="button" id="send_depense">calcul</button>
 
     </div>
 
     <br>    <span class="titre_depenses">Loyers/Charges</span>
 
-                     <input type="text" class="input_depenses" title="depenses"/>
+                     <input type="text" id="input_dep1" title="depenses"/>
+
+                        <button type="button" id='ajout_d1'>ajouter</button>
 
     <br> <br>   <span class="titre_depenses">Eau/Gaz/élec. </span>
 
-                     <input type="text" class="input_depenses" title="depenses"/>
+                     <input type="text" id="input_dep2" title="depenses"/>
+
+                        <button type="button" id='ajout_d2'>ajouter</button>
 
     <br> <br>   <span class="titre_depenses">Tél./Internet</span>
 
-                     <input type="text" class="input_depenses" title="depenses"/>
+                     <input type="text" id="input_dep3" title="depenses"/>
+
+                        <button type="button" id='ajout_d3'>ajouter</button>
 
                 <div id="new_depense"></div>
+
+                <div id='resultat_depenses'></div>
+
+                <p id='result_d'></p>
 
    <br> <br>     <input type="text" placeholder="Nom de la dépense" id="new_input_dn"/>
 
                     <input type="text" placeholder="Valeur de la dépense" id="new_input_dv" title="depenses"/>
 
-    <button type="button" id="add_new_input">Add</button>
+    <button type="button" id="add_newinput_d">Add</button>
 
 
-<!---- Partie du tableau pour les recettes : --->
+<!--- Partie du tableau pour les recettes : --->
 
 </div>
 
@@ -56,31 +66,40 @@
 
         <span>Recette</span>
 
-        <button type="button" id="send_recette">Send</button>
+        <button type="button" id="send_recette">calcul</button>
 
 
     </div>
 
     <br>    <span class="titre_depenses">Salaire</span>
 
-                 <input type="text" class="input_recette" title="recette"/>
+                 <input type="text" id="input_recette1" title="recette"/>
+
+                    <button type="button" id='ajout_r1'>ajouter</button>
 
     <br> <br> <span class="titre_depenses">Aides(Allocations,etc...)</span>
 
-                  <input type="text" class="input_recette" title="recette"/>
+                  <input type="text" id="input_recette2" title="recette"/>
+
+                      <button type="button" id='ajout_r2'>ajouter</button>
 
     <br> <br> <span class="titre_depenses">Rentes</span>
 
-                    <input type="text" class="input_recette" title="recette"/>
+                    <input type="text" id="input_recette3" title="recette"/>
+
+                        <button type="button" id='ajout_d3'>ajouter</button>
 
 
+                    <div id='new_recette'></div>
+
+                    <p id='result_r'></p>
+
+    <br> <br> <input type="text" placeholder="Nom de la recette" id="new_input_rn"/>
+
+    <input type="text" placeholder="Valeur de la recette" id="new_input_rv" title="recette"/>
 
 
-    <br> <br> <input type="text" placeholder="Nom de la recette" class="new_input"/>
-
-    <input type="text" placeholder="Valeur de la recette" class="new_input" title="recette"/>
-
-    <button type="button" class="add_new_input">Add</button>
+    <button type="button" id="add_newinput_r">Add</button>
 
 
 
@@ -95,17 +114,18 @@
 
         <span>épargne</span>
 
-        <button type="button" id="send_epargne">Send</button>
+        <button type="button" id="send_epargne">calcul</button>
 
 
     </div>
 
+      <div id='new_epargne'></div>
 
-    <br> <br> <input type="text" placeholder="Nom de l'épargne" class="new_input"/>
+    <br> <br> <input type="text" placeholder="Nom de l'épargne" id="new_input_en"/>
 
-    <input type="text" placeholder="Valeur de l'épargne" class="new_input"/>
+    <input type="text" placeholder="Valeur de l'épargne" id="new_input_ev"/>
 
-    <button type="button" class="add_new_input">Add</button>
+    <button type="button" id="add_newinput_e">Add</button>
 
 
 </div>
